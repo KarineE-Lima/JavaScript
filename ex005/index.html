@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 005</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/ex005/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Posto de Gasolina</h1>
+    </header>
+    <main>
+        <div class="entrada">
+            <p><label for="ilitros">Insira a quantidade de combustível em litros: </label></p>
+            <input type="number" name="litros" id="ilitros">
+            <p>
+                Insira o tipo de combustível:
+                <br><br>
+                <input type="radio" name="combustivel" id="igasolina"><label for="igasolina">Gasolina</label>
+                <input type="radio" name="combustivel" id="ialcool"> <label for="ialcool">Álcool</label>
+            </p>
+            <p><button onclick="gerar()">Calcular</button></p>
+        </div>
+        <div id="res"><p>O preço do litro da gasolina: R$2,70. <br> O preço do litro do álcool: R$ 1,90</p></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

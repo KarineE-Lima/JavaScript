@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 006</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/ex005/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Empréstimo</h1>
+    </header>
+    <main>
+        <div class="entrada">
+            <p><label for="irenda">Insira a sua renda mensal: </label></p>
+            <input type="number" name="renda" id="irenda">
+            <p><label for="iempres">Insira o valor do empréstimo:</label></p>
+            <input type="number" name="empres" id="iempres">
+            <p><label for="iparcela">Insira a quantidade das parcelas:</label></p>
+            <input type="number" name="parcela" id="iparcela">
+            <p><button onclick="gerar()">Simular</button></p>
+        </div>
+        <div id="res"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

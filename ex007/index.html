@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 007</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/ex005/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Cia de Pulverização</h1>
+    </header>
+    <main>
+        <div class="entrada">
+            <p><label for="iarea">Area a ser pulverizada em acres:</label></p>
+            <input type="number" name="area" id="iarea"> <br><br>
+            <h2>
+                Insira o tipo de Pulverização:
+            </h2>
+            <p id="radio">
+                <input type="radio" name="pulv" id="erva"> <label for="erva">Ervas daninhas - <strong>R$ 50,00</strong></label> <br>
+                <input type="radio" name="pulv" id="gafanhoto"> <label for="gafanhoto">Gafanhotos - <strong>R$ 100,00</strong></label> <br>
+                <input type="radio" name="pulv" id="broca"> <label for="broca">Broca - <strong>R$ 150,00</strong></label> <br>
+                <input type="radio" name="pulv" id="todos"> <label for="todos">Todos acima - <strong>R$ 250,00</strong></label>
+            </p>
+            <p>
+                <button onclick="gerar()">Calcular</button>
+            </p>
+        </div>
+        <div id="res"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
