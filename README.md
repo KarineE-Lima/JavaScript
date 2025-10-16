@@ -1,2 +1,2 @@
 # JavaScript
- Curso de JavaScript do CursoemVideo
+ Lógica de Programação com JavaScript
