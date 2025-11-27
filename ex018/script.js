@@ -1,3 +1,12 @@
+const botao = document.querySelector('input')
+botao.addEventListener('click', gerarPaleta)
+const elementos = document.getElementsByClassName('item')
+for(let j = 0; j < 5; j++){
+elementos[j].addEventListener('click', function(){
+    copiarTexto(elementos[j].textContent)
+})
+}
+
 function gerar_numero(min, max){
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -16,7 +25,7 @@ function gerarCorHexa(){
 
 }
 function gerarPaleta(){
-    const elementos = document.getElementsByClassName('item')
+    
     for(let i = 0; i < 5; i++){
         let cor = gerarCorHexa();
         elementos[i].style.backgroundColor =`${cor}`
@@ -24,6 +33,11 @@ function gerarPaleta(){
     }
     
 }
-function copiar(){
-    // usar api navigator.clipboard.writeText
+async function copiarTexto(texto){
+    try{
+        await navigator.clipboard.writeText(texto)
+        alert("Texto copiado!")
+    } catch (err){
+        window.alert("Erro ao copiar!")
+    }
 }

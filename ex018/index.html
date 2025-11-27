@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paleta de Cores</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body onload="gerarPaleta()">
     <main>
         <h1>Paleta de Cores</h1>
         <div class="conteiner">
-            <div class="item" onclick="copiar()"></div>
-            <div class="item" onclick="copiar()"></div>
-            <div class="item" onclick="copiar()"></div>
-            <div class="item" onclick="copiar()"></div>
-            <div class="item" onclick="copiar()"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
         </div>
         
         <div id="botao">
-            <input type="submit" value="Gerar Nova Paleta" onclick="gerarPaleta()">
+            <input type="submit" value="Gerar Nova Paleta">
             <p id="res"></p>
         </div>
     </main>

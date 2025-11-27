@@ -20,7 +20,7 @@ main{
     width: 80vw;
     padding: 10px;
     border-radius: 20px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.24);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.342);
 }
 main > h1{
     text-align: center;
@@ -33,12 +33,13 @@ input{
     padding: 10px;
     margin: 20px;
     box-shadow: 1px 1px 2px #0000005b;
-    background-color: lightgray;
+    background-color: rgb(182, 181, 181);
     border-radius: 10px;
     border: none;
 }
 input:hover{
-    background-color: rgb(150, 148, 148);
+    background-color: rgb(107, 106, 106);
+    transition: .5s;
     cursor: pointer;
 }
 .conteiner{
