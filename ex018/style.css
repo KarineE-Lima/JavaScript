@@ -46,12 +46,10 @@ input:hover{
     background-color: aquamarine;
     margin: 20px auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
-    max-width: 70vw;
-    min-width: 60vw;
-    min-height: 70px;
-    max-height: 80px;
+    width: 20vw;
+    
 }
 .item{
     border: 1px solid white;
@@ -62,6 +60,6 @@ input:hover{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.541);
     font-weight: bold;
     font-size: 2.3vw;
-    max-width: 20vw;
-    min-width: 14vw;
+    padding: 20px;
+    width: 20vw;
 }
