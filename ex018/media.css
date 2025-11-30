@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    body{
+        background-image: radial-gradient(white, gray);
+    }
+    main{
+        width: 700px;
+    }
+    .conteiner{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+    }
+    
+}
