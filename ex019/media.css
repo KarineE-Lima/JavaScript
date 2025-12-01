@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    body{
+        background-image: radial-gradient(var(--cor1), var(--cor2));
+    }
+    main{
+        width:700px;
+    }
+    .conteiner{
+        display: grid;
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(3, 80px);
+    }
+}
